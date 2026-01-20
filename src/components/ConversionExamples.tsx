@@ -55,7 +55,7 @@ export default function ConversionExamples() {
                     Convert between 40+ file formats instantly. No registration required.
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                     {examples.map((category, idx) => {
                         const Icon = category.icon;
                         return (
