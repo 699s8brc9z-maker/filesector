@@ -1,5 +1,5 @@
 import { Card } from '@/components/ui/card';
-import { FileImage, FileText, Video, Music } from 'lucide-react';
+import { FileImage, FileText } from 'lucide-react';
 
 export default function ConversionExamples() {
     const examples = [
@@ -23,26 +23,6 @@ export default function ConversionExamples() {
                 { from: 'PPTX', to: 'PDF', desc: 'PowerPoint to PDF' },
             ],
         },
-        {
-            category: 'Video Conversion',
-            icon: Video,
-            conversions: [
-                { from: 'MP4', to: 'GIF', desc: 'Video to animated GIF' },
-                { from: 'MP4', to: 'MP3', desc: 'Extract audio from video' },
-                { from: 'MOV', to: 'MP4', desc: 'Apple video to universal format' },
-                { from: 'Video', to: 'Thumbnail', desc: 'Extract video thumbnail' },
-            ],
-        },
-        {
-            category: 'Audio Conversion',
-            icon: Music,
-            conversions: [
-                { from: 'M4A', to: 'MP3', desc: 'Apple audio to MP3' },
-                { from: 'WAV', to: 'MP3', desc: 'Lossless to compressed' },
-                { from: 'MP3', to: 'WAV', desc: 'Compressed to lossless' },
-                { from: 'FLAC', to: 'MP3', desc: 'High quality to portable' },
-            ],
-        },
     ];
 
     return (
@@ -52,7 +32,7 @@ export default function ConversionExamples() {
                     Popular File Conversions
                 </h2>
                 <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-                    Convert between 40+ file formats instantly. No registration required.
+                    Convert between image and document formats instantly. No registration required.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -89,8 +69,10 @@ export default function ConversionExamples() {
                 <div className="mt-12 text-center text-sm text-slate-500">
                     <p className="mb-2">
                         <strong>Supported conversions:</strong> HEIC to JPG, HEIC to PNG, PNG to JPG, JPG to PNG,
-                        JPG to WebP, PNG to WebP, Image to PDF, HWP to PDF, DOCX to PDF, XLSX to PDF, PPTX to PDF,
-                        MP4 to GIF, MP4 to MP3, MOV to MP4, AVI to MP4, M4A to MP3, WAV to MP3, FLAC to MP3, and more.
+                        JPG to WebP, PNG to WebP, Image to PDF, HWP to PDF, DOCX to PDF, XLSX to PDF, PPTX to PDF, and more.
+                    </p>
+                    <p className="text-xs text-amber-600 mt-2">
+                        📝 Note: Video and audio conversion features are coming soon!
                     </p>
                 </div>
             </div>
