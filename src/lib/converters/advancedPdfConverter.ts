@@ -179,7 +179,7 @@ export async function rotatePDF(
         const pages = pdfDoc.getPages();
 
         pages.forEach(page => {
-            page.setRotation({ angle: degrees, type: 'degrees' });
+            page.setRotation(degrees as any);
         });
 
         const outputPath = getFilePath(outputFilename);

@@ -25,7 +25,6 @@ export async function GET(
             logError('Download API', new Error('Suspicious filename in download'), {
                 filename,
                 fileId,
-                ip: request.ip,
             });
             return NextResponse.json(
                 { error: ERROR_MESSAGES.INVALID_REQUEST },
@@ -96,7 +95,6 @@ export async function GET(
     } catch (error) {
         // Log detailed error server-side
         logError('Download API', error, {
-            ip: request.ip,
             userAgent: request.headers.get('user-agent'),
         });
 

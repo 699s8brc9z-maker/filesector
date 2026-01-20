@@ -31,7 +31,6 @@ export async function POST(request: NextRequest) {
         if (hasSuspiciousPatterns(file.name)) {
             logError('Upload API', new Error('Suspicious filename detected'), {
                 filename: file.name,
-                ip: request.ip,
             });
             return NextResponse.json(
                 { error: ERROR_MESSAGES.INVALID_FILE },
@@ -78,7 +77,6 @@ export async function POST(request: NextRequest) {
     } catch (error) {
         // Log detailed error server-side
         logError('Upload API', error, {
-            ip: request.ip,
             userAgent: request.headers.get('user-agent'),
         });
 
