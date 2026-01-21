@@ -7,7 +7,7 @@ export default function StructuredData() {
         '@type': 'WebApplication',
         name: 'FileSector',
         description: 'Free online file converter for images, documents, HWP, videos, and audio files',
-        url: 'https://filesector.com',
+        url: 'https://safefilesector.com',
         applicationCategory: 'UtilityApplication',
         operatingSystem: 'Web Browser',
         offers: {

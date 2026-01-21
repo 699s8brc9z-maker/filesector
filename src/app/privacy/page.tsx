@@ -150,7 +150,7 @@ export default function PrivacyPolicy() {
                             </p>
                             <div className="bg-slate-50 p-4 rounded-lg mt-4">
                                 <p><strong>개인정보 보호책임자:</strong> FileSector 운영팀</p>
-                                <p><strong>이메일:</strong> privacy@filesector.com (예시)</p>
+                                <p><strong>이메일:</strong> vectorsector0@proton.me</p>
                             </div>
                         </div>
                     </section>

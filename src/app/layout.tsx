@@ -40,14 +40,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://filesector.com'),
+  metadataBase: new URL('https://safefilesector.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "FileSector - Free File Converter | HEIC, HWP, Video, Audio",
     description: "Convert images, documents, HWP, videos, and audio files for free. Supports 40+ conversions. Safe and fast online file conversion platform.",
-    url: 'https://filesector.com',
+    url: 'https://safefilesector.com',
     siteName: 'FileSector',
     locale: 'en_US',
     alternateLocale: ['ko_KR', 'ja_JP', 'zh_CN'],
@@ -97,11 +97,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="alternate" hrefLang="en" href="https://filesector.com/" />
-        <link rel="alternate" hrefLang="ko" href="https://filesector.com/" />
-        <link rel="alternate" hrefLang="ja" href="https://filesector.com/" />
-        <link rel="alternate" hrefLang="zh" href="https://filesector.com/" />
-        <link rel="alternate" hrefLang="x-default" href="https://filesector.com/" />
+        <link rel="alternate" hrefLang="en" href="https://safefilesector.com/" />
+        <link rel="alternate" hrefLang="ko" href="https://safefilesector.com/" />
+        <link rel="alternate" hrefLang="ja" href="https://safefilesector.com/" />
+        <link rel="alternate" hrefLang="zh" href="https://safefilesector.com/" />
+        <link rel="alternate" hrefLang="x-default" href="https://safefilesector.com/" />
       </head>
       <body className={`${geist.className} antialiased bg-slate-50/50`}>
         <StructuredData />
